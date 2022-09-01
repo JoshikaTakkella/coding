@@ -1,0 +1,21 @@
+#include<stdio.h>
+int check(long int);
+	void main()
+	{
+    	long int a,ans;
+   		printf("Enter a number\n");  // you can give any long number 
+    	scanf("%ld",&a);
+    	ans=check(a);
+    	if(ans==0)
+    		printf("Even");
+    	else
+	    		printf("Odd");
+	}
+	int check(long int a)
+	{
+		if(a%2==0)
+			return(0);
+		else
+			return(1);
+	}
+}
